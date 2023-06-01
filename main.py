@@ -103,7 +103,17 @@ grup_ort = df.groupby("Nesne Değeri")[["Tecrübe", "Yeni Maaş"]].mean()
 print("Gruplanmış DataFrame:")
 print(grup_ort)
 
-
 # c) Maaşı 15000 TL üzerinde olanların toplam sayısını yazdırıyoruz...
 sayi = df[df["Maaş"] > 15000].shape[0]
 print(f"\nMaaşı 15000 TL üzerinde olanların toplam sayısı: {sayi}")
+
+# d) Yeni Maaşa göre DataFrame'i küçükten büyüğe sıralıyoruz...
+siralama = df.sort_values("Yeni Maaş")
+print("\nSıralanmış DataFrame:")
+print(siralama)
+
+# e) Tecrübesi 3 seneden fazla olan Beyaz yakalıları buluyoruz...
+
+tecrübeli_by_sayisi = df[(df["Nesne Değeri"] == "Beyaz Yaka") & (df["Tecrübe"] > 3)]
+print("\nTecrübesi 3 seneden fazla olan Beyaz Yakalılar:")
+print(tecrübeli_by_sayisi)
