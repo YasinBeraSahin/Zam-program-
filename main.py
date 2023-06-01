@@ -75,3 +75,22 @@ try:
 
 except Exception as e: #hatayı ekrana döndürüyoruz...
     print("Hata:", e)
+
+# DataFrame oluşturuyoruz...
+data = {
+    "Nesne Değeri": ["Çalışan", "Çalışan", "Çalışan", "Mavi Yaka", "Mavi Yaka", "Mavi Yaka", "Beyaz Yaka", "Beyaz Yaka", "Beyaz Yaka"],
+    "TC No": ["44444444444", "55555555555", "66666666666", "77777777777", "88888888888", "99999999999", "00000000000", "10101010101", "01010101010"],
+    "Ad": ["Eda", "Yasin Bera", "Cansu", "Ahmet", "Yunus", "Enes", "Egemen", "İrem", "Eylül"],
+    "Soyad": ["Çalışkan", "Şahin", "Kartal", "Demir", "Gökdağ", "Kartop", "Akgün", "Koç", "Sabancı"],
+    "Yaş": [23, 24, 25, 26, 27, 28, 29, 30, 31],
+    "Cinsiyet": ["Kadın", "Erkek", "Kadın", "Erkek", "Erkek", "Erkek", "Erkek", "Kadın", "Kadın"],
+    "Uyruk": ["Türk", "Türk", "Türk", "Türk", "Türk", "Türk", "Türk", "Türk", "Türk"],
+    "Sektör": ["Eğitim", "Sağlık", "İnşaat", "Eğitim", "Sağlık", "İnşaat", "Eğitim", "Sağlık", "İnşaat"],
+    "Tecrübe": [30, 20, 60, 60, 30, 14, 40, 50, 10],
+    "Maaş": [12000, 9000, 20000, 22000, 13000, 8700, 11000, 23000, 10000],
+    "Yıpranma Payı": [0,0 ,0 , 0.7, 0.5, 0.3, 0,0 ,0 ],
+    "Teşvik Prim": [0, 0, 0, 0, 0, 0, 2000, 3000, 1000],
+    "Yeni Maaş": [c1, c2, c3, m1, m2, m3, b1, b2, b3]
+}
+
+df = pd.DataFrame(data)
