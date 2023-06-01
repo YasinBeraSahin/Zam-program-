@@ -38,3 +38,40 @@ try:
     b1=beyaz_yaka1.yeni_maas()
     b2=beyaz_yaka2.yeni_maas()
     b3=beyaz_yaka3.yeni_maas()
+
+# Nesnelerin bilgilerini __str__ metoduyla yazdırıyoruz...
+    print("İnsan 1:")
+    print(insan1)
+    print("İnsan 2:")
+    print(insan2)
+
+    print("\nİşsiz 1:")
+    print(issiz1)
+    print("İşsiz 2:")
+    print(issiz2)
+    print("İşsiz 3:")
+    print(issiz3)
+
+    print("\nÇalışan 1:")
+    print(calisan1)
+    print("Çalışan 2:")
+    print(calisan2)
+    print("Çalışan 3:")
+    print(calisan3)
+
+    print("\nMavi Yaka 1:")
+    print(mavi_yaka1)
+    print("Mavi Yaka 2:")
+    print(mavi_yaka2)
+    print("Mavi Yaka 3:")
+    print(mavi_yaka3)
+
+    print("\nBeyaz Yaka 1:")
+    print(beyaz_yaka1)
+    print("Beyaz Yaka 2:")
+    print(beyaz_yaka2)
+    print("Beyaz Yaka 3:")
+    print(beyaz_yaka3)
+
+except Exception as e: #hatayı ekrana döndürüyoruz...
+    print("Hata:", e)
