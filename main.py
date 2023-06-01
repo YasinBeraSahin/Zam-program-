@@ -117,3 +117,14 @@ print(siralama)
 tecrübeli_by_sayisi = df[(df["Nesne Değeri"] == "Beyaz Yaka") & (df["Tecrübe"] > 3)]
 print("\nTecrübesi 3 seneden fazla olan Beyaz Yakalılar:")
 print(tecrübeli_by_sayisi)
+
+# f) Yeni Maaşı 10000 TL üzerinde olanların 2-5 satırlarındakileri yazdırıyoruz...
+k = df[df["Yeni Maaş"] > 10000][["TC No", "Yeni Maaş"]]
+l = k.iloc[2:5]
+print("yeni maaşı 10000TL ve üzeri olanların 2-5 satırdakileri")
+print(l)
+
+# g) Yeni DataFrame oluşturuyoruz...
+yeni_df = df[["Ad", "Soyad", "Sektör", "Yeni Maaş"]]
+print("\nyeni maaşlar")
+print(yeni_df)
