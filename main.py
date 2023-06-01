@@ -94,3 +94,16 @@ data = {
 }
 
 df = pd.DataFrame(data)
+
+# a) Boş değerleri 0 olarak dolduruyoruz...
+df = df.fillna(0)
+
+# b) Gruplara göre tecrübe ve yeni maaşların ortalamasını alıyoruz...
+grup_ort = df.groupby("Nesne Değeri")[["Tecrübe", "Yeni Maaş"]].mean()
+print("Gruplanmış DataFrame:")
+print(grup_ort)
+
+
+# c) Maaşı 15000 TL üzerinde olanların toplam sayısını yazdırıyoruz...
+sayi = df[df["Maaş"] > 15000].shape[0]
+print(f"\nMaaşı 15000 TL üzerinde olanların toplam sayısı: {sayi}")
