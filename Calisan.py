@@ -23,7 +23,7 @@ class Calisan(Insan):
 
     def set_maas(self, maas):
         self.__maas = maas
-
+        
     def zam_hakki(self):
         try:
             if self.__tecrube < 24:
